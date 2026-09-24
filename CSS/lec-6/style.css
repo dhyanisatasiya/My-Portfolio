@@ -1,0 +1,19 @@
+
+.b1{
+    width: 400px;
+    height: 450px;
+    background: #f4f5f6; 
+    margin: 100px auto 100px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.b2{
+    width: 300px;
+    height: 300px;
+    border: 22px solid #2196F3;
+    object-fit: cover;
+    box-sizing: border-box;
+}

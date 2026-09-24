@@ -1,0 +1,50 @@
+.d1 {
+    background-color: rgb(249, 246, 246);
+    height: 120vh;
+
+}
+
+.Article1 {
+    color: black;
+    border: 2px;
+    border-color: rgb(140, 137, 137);
+    border-style: solid;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.Article1 h1::first-letter {
+
+    color: red;
+    font-size: 50px;
+
+}
+
+.Article1 h1 {
+    text-align: center;
+}
+
+.p1 {
+    background-color: antiquewhite;
+    border-left: 10px solid red;
+
+}
+
+.Article1 p {
+    margin: 5px 0;
+}
+
+.p2 {
+    background-color: #bfdc98;
+    border: 5px solid #d8edf3;
+}
+
+
+.d1 .Article1:nth-child(even)
+ {
+    background-color: white;
+ }
+
+

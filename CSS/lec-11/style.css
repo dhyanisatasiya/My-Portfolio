@@ -1,0 +1,298 @@
+body{
+    border: 15px solid black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.h1{
+    background-color: rgb(103, 101, 101);
+    color: white;
+    
+}
+.h1 h1{
+    text-align: center;
+    margin: 0;
+}
+.h1 p{
+    font-size: larger;
+    margin: 20px;
+}
+.box1{
+    height: 300px;
+
+    background-color: rgb(221, 240, 8);
+    margin-left: 20px;
+}
+.b1{
+    color: black;
+    background-color: bisque;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    
+}.main{
+    display: flex;
+}
+.h2{
+    background-color: rgb(103, 101, 101);
+    color: white;
+    
+}
+.h2 h1{
+    text-align: center;
+    margin: 20px;
+}
+.h2 li{
+    font-size: larger;
+}
+ .li{
+    font-size: larger;
+    margin: 20px;
+    list-style: circle;
+}
+.main div{
+    color: black;
+    background-color: bisque;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.h3{
+    background-color: rgb(103, 101, 101);
+    color: white;
+    
+}
+.h3 h1{
+    text-align: center;
+    margin: 20px;
+}
+.h3 li{
+    font-size: larger;
+}
+.main1 div{
+    
+    width: 90px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+}
+
+.main1{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.main2 div{
+    
+    width: 90px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+}
+
+.main2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    row-gap: 50px;
+}
+.main3 div{
+    
+    width: 90px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+}
+
+.main3{
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+}
+.main4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:250px; 
+    gap:0px;
+}
+
+.main4 div{
+    width: 90px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.box2{
+    height: 200px;
+    background-color: rgb(221, 240, 8);
+    margin-left: 20px;
+}
+.main5{
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    height:250px; 
+    gap:0px;
+}
+
+.main5 div{
+    width:106px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.box3{
+    height: 100px;
+    background-color: rgb(221, 240, 8);
+    margin-left: 20px;
+}
+.box4{
+    height: 300px;
+    background-color: yellow;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.main6{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 320px;
+    justify-content: flex-end;   /* મહત્વનું */
+    gap: 0;
+}
+
+.main6 div{
+    width: 90px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.box5{
+    height: 300px;
+    background-color: rgb(221, 240, 8);
+    margin-left: 20px;
+}
+
+.main7{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 50px;
+    
+}
+
+.main7 div{
+    width:105px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.main8{
+    display: flex;
+    flex-flow:row wrap-reverse;
+    row-gap: 50px;
+    
+}
+
+.main8 div{
+    width:105px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.main9{
+    display: flex;
+    flex-flow:row nowrap;
+    flex-wrap: wrap;
+    height:250px; 
+    gap:0px;
+}
+
+.main9 div{
+    width:94px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.main10{
+    display: flex;
+    flex-flow:column wrap;
+    flex-wrap: wrap;
+    height: 350px;
+   
+}
+
+.main10 div{
+    width: 90px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.main11{
+    display:flex;
+    flex-flow:column wrap-reverse;
+    height:350px;
+    
+    color: black;
+}
+
+.main11 div{
+    width:90px;
+    height:100px;
+    background:bisque;
+   
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.main12{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 320px;
+}
+.main12 div{
+    width:90px;
+    height: 100px;
+    background: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}

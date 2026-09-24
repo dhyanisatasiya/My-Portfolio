@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    padding: px;
+
+}
+
+
+.header {
+
+    background-color: rgb(171, 159, 159);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1 {
+        color: rgb(1, 1, 36);
+    }
+}
+
+.menus {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.btn-1 {
+    display: none;
+}
+
+.content {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid rgb(202, 180, 19);
+    border-radius: 10px;
+}
+
+.btn-2 {
+    padding: 10px 10px;
+    background-color: white;
+    border: 1px solid rgb(202, 180, 19);
+    border-radius: 5px;
+}
+
+.card:nth-child(2) {
+    transform: scale(1.08);
+    background-color: rgb(7, 7, 115);
+    color: white;
+
+    h1 {
+        color: rgb(220, 220, 96);
+    }
+
+    .btn-2 {
+
+        background-color: rgb(7, 80, 84);
+
+    }
+}
+
+
+@media (max-width:992px) {
+    .menus {
+        display: none;
+    }
+
+    .btn-1 {
+        display: flex;
+    }
+
+    .cards {
+       
+        flex-wrap: wrap;
+      
+    }
+}

@@ -1,0 +1,31 @@
+.d1
+{
+    background-color: rgb(251, 246, 246);
+   text-align: center;
+    height: 100vh;
+  
+    
+  
+}
+.card{
+    width:20%;
+    height:300px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(89, 85, 85);
+    margin: 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.card h3
+{
+text-align: center;
+}
+.d1 img
+{
+    height: 200px;
+    width: 200px;
+}
+.d1 p{
+    color: rgb(65, 65, 61);
+}

@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    border:15px solid #000;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5{
+    background:#666;
+    padding:20px 0;
+    margin-bottom:10px;
+}
+
+.h1 h1,
+.h2 h1,
+.h3 h1,
+.h4 h1,
+.h5 h1{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.h1 ul,
+.h2 ul,
+.h3 ul,
+.h4 ul,
+.h5 ul{
+    width:80%;
+    margin:auto;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.box1{
+    width:75%;
+    height:220px;
+    background:#ffe600;
+    margin:auto;
+    overflow:hidden;
+}
+
+.main,
+.main1,
+.main2,
+.main3{
+    display:flex;
+    width:100%;
+}
+
+.main div,
+.main1 div,
+.main2 div,
+.main3 div{
+    width:100px;
+    height:90px;
+    background:bisque;
+    border:1px solid #000;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:8px;
+    font-size:14px;
+    color:#000;
+}
+
+
+.main div:nth-child(-n+3) {
+    width: 60px;
+}
+
+.main div:nth-child(even):nth-child(n+4) {
+    width: 60px;
+}
+
+.main div:nth-child(odd):nth-child(n+4) {
+    width: 80px;
+}
+
+.main1 div:nth-child(-n+2) {
+    width: 70px;
+}
+
+.main1 div:nth-child(even):nth-child(n+4) {
+    width: 60px;
+}
+
+.main1 div:nth-child(odd):nth-child(n+3) {
+    width: 80px;
+}
+
+
+.b1{
+    flex-basis:auto;
+}
+
+.b2{
+    flex-basis:20px;
+}
+
+.b3{
+    flex-basis:30%;
+}
+
+.b4{
+    flex-grow:0;
+}
+
+.b5{
+    flex-grow:1;
+}
+
+.b6{
+    flex-grow:2;
+}
+
+.b7{
+    flex-shrink:0;
+}
+
+.b8{
+    flex-shrink:1;
+}
+
+.b9{
+    flex-shrink:2;
+}
+
+.o0{
+    order:0;
+}
+
+.o1{
+    order:1;
+}
+
+
+
+.main2{
+    height:220px;
+}
+
+.as1{
+    align-self:flex-start;
+}
+
+.as2{
+    align-self:flex-end;
+}
+
+.as3{
+    align-self:center;
+}
+
+.as4{
+    align-self:stretch;
+    height:auto;
+}
+
+.main3{
+    height:220px;
+    align-items:baseline;
+}
+
+.base1{
+    font-size:18px;
+}
+
+.base2{
+    align-self:baseline;
+    font-size:30px;
+}
+
+.base3{
+    font-size:45px;
+}
+

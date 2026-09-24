@@ -1,0 +1,23 @@
+.tb{
+    width:50%;
+    margin:40px auto;
+    border:4px solid black;
+    border-collapse:collapse; 
+    padding:20px;
+    text-align:center;
+    font-size:18px;
+}
+.cs1
+{
+ font-style: italic;
+ color:rgb(102, 134, 123)
+}
+.cs2
+{
+    font-weight: 600px;
+    text-decoration: underline;
+}
+.p1
+{
+    font-size: small;
+}

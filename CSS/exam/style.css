@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header,nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.m1,
+.m2,
+.m3 {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .l1 {
+        color: blueviolet;
+    }
+
+    span {
+        color: rgb(237, 237, 10);
+    }
+
+}
+
+.m3 {
+    background-color: blue;
+    padding: 20px;
+
+}
+
+.btn1 {
+    border: none;
+    display: none;
+    background-color: black;
+    font-size: 20px;
+}
+
+.menu {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: rgb(15, 2, 2);
+    }
+}
+
+.hero {
+
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(62, 63, 64);
+    line-height: 15px;
+    color: white;
+
+}
+.left img{
+    width: 100%;
+}
+
+.right h1 {
+    text-align: center;
+}
+
+
+.p1 {
+    margin-left: 25px;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(49, 7, 88);
+    border-radius: 50px;
+    margin-left: 80px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.content {
+    text-align: center;
+
+    p {
+        color: rgb(199, 194, 194);
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.card {
+    border: none;
+    text-align: center;
+  
+    width: 20%;
+    height: 40vh;
+
+    img {
+        width: 100%;
+    }
+}
+
+.c1 {
+    color: rgb(66, 13, 123);
+}
+.c2{
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    
+}
+.m4 {
+    display: flex;
+    padding:0px 60px;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+.c3{
+    margin-top: 10%;
+}
+.f1{
+    text-decoration:underline;
+  
+}
+@media (max-width:992px) {
+
+    .m1,
+    .m2,
+    .m3 {
+        display: none;
+    }
+
+    .btn1 {
+
+        display: flex;
+    }
+
+    .menu {
+
+        display: none;
+
+    }
+
+    .hero {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+.cards {
+    align-items: center;
+   flex-direction: column;
+    gap: 110px;
+}
+.card{
+       width: 60%;
+   
+}
+.footer{
+    
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+
+
+}

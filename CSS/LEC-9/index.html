@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sticky Notes Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Sticky Notes Dashboard</h1>
+    </div>
+    
+  
+    <div class="d1">
+      
+        <div class="Categories">
+            <h3>Categories</h3>
+            <select>
+                <option>Select Category</option>
+                <option>Personal</option>
+                <option>Work</option>
+                <option>Ideas</option>
+                <option>Reminders</option>
+            </select>
+            <select>
+                <option>Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+            <select>
+                <option>Select Course</option>
+                <option>BCA</option>
+                <option>B.Sc IT</option>
+                <option>B.Com</option>
+                <option>BBA</option>
+            </select>
+            <select>
+                <option>Select Theme</option>
+                <option>Light</option>
+                <option>Dark</option>
+                <option>Blue</option>
+                <option>Green</option>
+            </select>
+        </div>
+        
+        <div class="content">
+           
+            <div class="card card-1">
+                <h4><i class="fa-solid fa-clipboard-list" style="color:white;"></i>Meeting Notes</h4>
+                <p>Project deadline is next Monday. Final review due Friday.</p>
+            </div>
+            <div class="card card-2">
+                <h4><i class="fa-solid fa-thumbtack" style="color:red;"></i>Grocery List</h4>
+                <p>Milk, Eggs, Bread, Coffee, Fruits</p>
+            </div>
+            <div class="card card-3">
+                <h4><i class="fa-regular fa-lightbulb" style="color: rgb(255, 255, 255);"></i>App Idea</h4>
+                <p>Reminder app with voice and image input. Offline sync tool!</p>
+            </div>
+            <div class="card card-4">
+                <h4><i class="fa-solid fa-record-vinyl" style="color: rgb(31, 30, 19);"></i>Today's Goals</h4>
+                <ol >
+                    <li>Finish UI</li>
+                    <li>Record Demo</li>
+                    <li>Send feedback</li>
+                </ol>
+            </div>
+            
+            <div class="cards-footer">
+                <button class="b1">Add Note</button>
+                <button class="b1">Delete All</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000; 
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #000;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.nav-links a:hover, .nav-links a.active {
+    color: #000;
+    background-color: #fff;
+}
+
+
+.line {
+    width: 1px;
+    height: 20px;
+    background: #444;
+    margin: 0 10px;
+}
+
+.right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.right a {
+    color: rgba(255, 255, 255, 0.8); 
+    font-size: 18px;
+    text-decoration: none;
+    width: 40px;  
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    transition: background-color 0.2s ease, color 0.2s ease; 
+}
+
+
+.right a:hover {
+    background-color:white;
+    color: #151313; 
+}
+
+.leng {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px; 
+    transition: all 0.2s ease;
+}
+
+
+.leng:hover {
+    border-color: #ffffff; 
+    background-color: white;
+    color: #030202;
+}
+
+/* Join Prime બટન */
+.join {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #0f79af; 
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    transition: background-color 0.2s ease;
+}
+
+
+.join:hover {
+    background-color: #1a98d9; 
+}
+
+
+.content {
+    text-align:left;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 22px;
+    color: #aaa;
+}
+.list{
+   list-style: none;}
+   

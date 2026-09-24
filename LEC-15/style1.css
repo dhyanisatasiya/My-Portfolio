@@ -1,0 +1,160 @@
+body{
+    margin:0;
+    padding:20px;
+    background:#fff;
+}
+
+.header h1 {
+    text-align: left;
+}
+.card{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.lan {
+    width: 17%;
+    height: 8vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lan h3 {
+    
+    font-size: 15px;
+}
+h1 a {
+    color: blueviolet;
+    font-size: 100%;
+     font-weight: bold;
+}
+.card1{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.product{
+    width:23%;
+    box-sizing:border-box;
+}
+
+.product img{
+    width:100%;
+    object-fit:cover;
+}
+.product p{
+    color: gray;
+    
+}
+p i {
+    color: #f4b400;
+    font-size: 25px;
+}
+
+p span {
+    color: gray;
+    font-size: 25px;
+}
+p strong{
+font-size: 25px;
+color: #f4b400;
+}
+.price{
+    margin-bottom:12px;
+}
+
+.new{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.old{
+    color:gray;
+    text-decoration:line-through;
+    margin-left:8px;
+}
+
+.tag{
+    display:flex;
+    gap:10px;
+}
+
+.premium{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #6f2cff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.best{
+    background:#d8f3ef;
+    color:#14532d;
+    padding: 10px 20px;
+    border-radius:5px;
+    font-size:14px;
+     font-weight: bold;
+}
+.high{
+     background:#ffe8a9;
+    color:#644314;
+    padding: 15px 35px;
+    border-radius:5px;
+    font-size:14px;
+     font-weight: bold;
+}
+
+@media (max-width:576px){
+    .lan{
+        width:100%;
+    }
+    .product{
+    width:100%
+}
+
+}
+
+
+@media (min-width:576px) and (max-width:768px){
+   .lan{
+        width:48%;
+    }
+        .product{
+    width:40%
+}
+}
+
+
+ @media (min-width:768px) and (max-width:992px){
+    .lan{
+        width:48%;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+    .lan{
+        width:30%;
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1400px){
+    .lan{
+        width:20%;
+    }
+}
+
