@@ -1,275 +1,601 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My HTML Project</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: #061a2e;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* ================= MAIN CONTAINER ================= */
+
+        .project-section {
+            min-height: 100vh;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+
+        /* ================= HEADING ================= */
+
+        .main-title {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+
+        .main-title span {
+            color: #168cff;
+        }
+
+
+        /* ================= PROJECT CARD ================= */
+
+        .project-card {
+            background-color: #0a2540;
+            border: 1px solid #168cff;
+            border-radius: 20px;
+            transition: 0.4s ease;
+            overflow: hidden;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(22, 140, 255, 0.25);
+        }
+
+
+        /* ================= ICON ================= */
+
+        .project-icon {
+            width: 75px;
+            height: 75px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background-color: #061a2e;
+            border: 2px solid #168cff;
+
+            color: #168cff;
+
+            font-size: 35px;
+
+            transition: 0.4s ease;
+        }
+
+
+        .project-card:hover .project-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+
+        /* ================= PROJECT TITLE ================= */
+
+        .project-title {
+            color: white;
+            font-weight: bold;
+        }
+
+
+        /* ================= PROJECT DESCRIPTION ================= */
+
+        .project-description {
+            color: #b8c7d9;
+            line-height: 1.6;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .project-btn {
+            background-color: #168cff;
+            color: white;
+            border: none;
+            transition: 0.3s ease;
+        }
+
+
+        .project-btn:hover {
+            background-color: #0d6efd;
+            color: white;
+            transform: scale(1.05);
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 576px) {
+
+            .main-title {
+                font-size: 36px;
+            }
+
+            .project-section {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
-<body style="background-color:#061a2e;">
 
-    <!-- Heading -->
-    <div class="container py-5">
+<body>
 
-        <h1 class="text-center text-white fw-bold mb-5">
-            My <span style="color:#168cff;">HTML Project</span>
-        </h1>
 
-        <!-- Cards -->
-        <div class="row justify-content-center g-4">
+    <!-- ================================================= -->
+    <!--                 HTML PROJECTS                     -->
+    <!-- ================================================= -->
 
-            <!-- Task 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
+    <section class="project-section">
 
-                <div class="card h-100 shadow">
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+        <div class="container">
 
-                        <h3 class="fw-bold">
+
+            <!-- ================= HEADING ================= -->
+
+            <div class="text-center mb-5">
+
+                <h1 class="main-title text-white">
+
+                    My <span>HTML Project</span>
+
+                </h1>
+
+                <p class="mt-3" style="color:#b8c7d9;">
+
+                    My HTML practice projects and assignments
+
+                </p>
+
+            </div>
+
+
+            <!-- ================= PROJECT CARDS ================= -->
+
+            <div class="row justify-content-center g-4">
+
+
+                <!-- ================= TASK 1 ================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="project-card h-100 text-center p-4">
+
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-brands fa-html5"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 1
+
                         </h3>
 
-                        <p class="text-secondary">
+
+                        <p class="project-description">
+
                             This is my HTML Task 1 project.
+                            It contains basic HTML structure
+                            and web page elements.
+
                         </p>
+
 
                         <a href="./lec-1/demo.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
+
+                <!-- ================= TASK 2 ================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="project-card h-100 text-center p-4">
+
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
 
 
-            <!-- Task 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
+                        <h3 class="project-title">
 
-                <div class="card h-100 shadow">
-
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
-
-                        <h3 class="fw-bold">
                             Task 2
+
                         </h3>
 
-                        <p class="text-secondary">
+
+                        <p class="project-description">
+
                             This is my HTML Task 2 project.
+                            It focuses on HTML elements
+                            and page structure.
+
                         </p>
+
 
                         <a href="./lec-1/index.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
+
+                <!-- ================= TASK 3 ================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="project-card h-100 text-center p-4">
+
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
 
 
-            <!-- Task 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
+                        <h3 class="project-title">
 
-                <div class="card h-100 shadow">
-
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
-
-                        <h3 class="fw-bold">
                             Task 3
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 3 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 3 project
+                            with animated web page elements.
+
                         </p>
+
 
                         <a href="./lec-2/Animated.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
-             <!-- Task 4 -->
-            <div class="col-12 col-md-6 col-lg-4">
 
-                <div class="card h-100 shadow">
+                <!-- ================= TASK 4 ================= -->
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+                <div class="col-12 col-md-6 col-lg-4">
 
-                        <h3 class="fw-bold">
+                    <div class="project-card h-100 text-center p-4">
+
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-image"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 4
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 4 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 4 project
+                            based on a digital poster design.
+
                         </p>
+
 
                         <a href="./lec-2/Digital Poster.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
-             <!-- Task 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
 
-                <div class="card h-100 shadow">
+                <!-- ================= TASK 5 ================= -->
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+                <div class="col-12 col-md-6 col-lg-4">
 
-                        <h3 class="fw-bold">
+                    <div class="project-card h-100 text-center p-4">
+
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-table"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 5
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 5 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 5 project
+                            using HTML tables and table elements.
+
                         </p>
+
 
                         <a href="./lec-2/table.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
-             <!-- Task 6 -->
-            <div class="col-12 col-md-6 col-lg-4">
+                <!-- ================= TASK 6 ================= -->
 
-                <div class="card h-100 shadow">
+                <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+                    <div class="project-card h-100 text-center p-4">
 
-                        <h3 class="fw-bold">
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-photo-film"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 6
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 6 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 6 project
+                            using audio and video elements.
+
                         </p>
+
 
                         <a href="./lec-3/av.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
-             <!-- Task 7 -->
-            <div class="col-12 col-md-6 col-lg-4">
+                <!-- ================= TASK 7 ================= -->
 
-                <div class="card h-100 shadow">
+                <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+                    <div class="project-card h-100 text-center p-4">
 
-                        <h3 class="fw-bold">
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-rectangle-list"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 7
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 7 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 7 project
+                            using HTML forms and input elements.
+
                         </p>
+
 
                         <a href="./lec-3/form.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
-             <!-- Task 8 -->
-            <div class="col-12 col-md-6 col-lg-4">
+                <!-- ================= TASK 8 ================= -->
 
-                <div class="card h-100 shadow">
+                <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+                    <div class="project-card h-100 text-center p-4">
 
-                        <h3 class="fw-bold">
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 8
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 8 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 8 project
+                            based on a website wireframe design.
+
                         </p>
+
 
                         <a href="./Wairframe/final.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
-            </div>
 
-             <!-- Task 9 -->
-            <div class="col-12 col-md-6 col-lg-4">
+                <!-- ================= TASK 9 ================= -->
 
-                <div class="card h-100 shadow">
+                <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card-body text-center p-4"
-                         style="background-color:#d9e8f6;">
+                    <div class="project-card h-100 text-center p-4">
 
-                        <h3 class="fw-bold">
+                        <div class="project-icon mb-4">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+
+                        <h3 class="project-title">
+
                             Task 9
+
                         </h3>
 
-                        <p class="text-secondary">
-                            This is my HTML Task 9 project.
+
+                        <p class="project-description">
+
+                            This is my HTML Task 9 project
+                            with animated HTML elements.
+
                         </p>
 
+
                         <a href="./lec-2/Animated.html"
-                           class="btn btn-primary rounded-pill px-4">
+                            class="btn project-btn rounded-pill px-4"
+                            target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+
                             Open Project
+
                         </a>
 
                     </div>
 
                 </div>
 
+
             </div>
-
-
 
         </div>
 
-    </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
