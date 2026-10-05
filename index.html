@@ -4,7 +4,6 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dhyani Portfolio</title>
@@ -12,10 +11,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -27,6 +31,7 @@
             color: white;
             font-family: Arial, sans-serif;
         }
+
 
         /* ================= FIXED HEADER ================= */
 
@@ -45,6 +50,35 @@
             padding-top: 95px;
         }
 
+
+        /* ================= HERO ================= */
+
+        .hero-role {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            margin-top: 15px;
+            line-height: 1.3;
+        }
+
+        .typewriter-text {
+            color: #0d6efd;
+            font-weight: 700;
+        }
+
+        .typing-cursor {
+            color: #0d6efd;
+            font-weight: bold;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+
         /* ================= PROFILE IMAGE ================= */
 
         .profile-img {
@@ -60,6 +94,7 @@
         .profile-img:hover {
             transform: scale(1.08);
         }
+
 
         /* ================= WORK CARD ================= */
 
@@ -83,6 +118,7 @@
 
         }
 
+
         /* ================= CONTACT FORM ================= */
 
         .contact-form input::placeholder,
@@ -90,6 +126,7 @@
             color: #ffffff;
             opacity: 1;
         }
+
 
         /* ================= FOOTER ================= */
 
@@ -160,6 +197,9 @@
             text-align: center;
         }
 
+
+        /* ================= SKILL CARD ================= */
+
         .skill-card {
             transition: 0.3s ease;
         }
@@ -168,6 +208,9 @@
             transform: translateY(-8px);
             box-shadow: 0 10px 25px rgba(22, 140, 255, 0.25);
         }
+
+
+        /* ================= RESPONSIVE ================= */
 
         @media (max-width: 768px) {
 
@@ -183,7 +226,16 @@
                 width: 300px;
             }
 
+            .hero-role {
+                font-size: 27px;
+            }
+
+            .display-1 {
+                font-size: 3rem;
+            }
+
         }
+
 
         @media (max-width: 400px) {
 
@@ -191,88 +243,218 @@
                 width: 250px;
             }
 
+            .hero-role {
+                font-size: 24px;
+            }
+
+            .display-1 {
+                font-size: 2.5rem;
+            }
+
         }
+
     </style>
 
 </head>
 
+
 <body>
 
 
- <!-- ================================================= -->
-<!--                    FIXED HEADER                   -->
-<!-- ================================================= -->
+    <!-- ================================================= -->
+    <!--                    FIXED HEADER                   -->
+    <!-- ================================================= -->
 
-<header class="fixed-header">
+    <header class="fixed-header">
 
-    <div class="container py-4">
+        <div class="container py-4">
 
-        <!-- ================= DESKTOP HEADER ================= -->
+            <!-- ================= DESKTOP HEADER ================= -->
 
-        <div class="d-none d-md-flex justify-content-between align-items-center">
+            <div class="d-none d-md-flex justify-content-between align-items-center">
 
-            <!-- Logo -->
+                <!-- Logo -->
 
-            <div>
+                <div>
 
-                <h2 class="mb-0 fw-bold">
+                    <h2 class="mb-0 fw-bold">
+                        <span style="color:#168cff;">D</span>hyani
+                    </h2>
 
-                    <span style="color:#168cff;">D</span>hyani
+                </div>
 
-                </h2>
+
+                <!-- Navigation -->
+
+                <div class="bg-white rounded-pill d-flex justify-content-center align-items-center gap-4 px-4 py-2">
+
+                    <a href="#home" class="text-decoration-none text-dark">
+                        Home
+                    </a>
+
+                    <a href="#about" class="text-decoration-none text-dark">
+                        About
+                    </a>
+
+                    <a href="#skills" class="text-decoration-none text-dark">
+                        Skills
+                    </a>
+
+                    <a href="#projects" class="text-decoration-none text-dark">
+                        Projects
+                    </a>
+
+                    <a href="#contact" class="text-decoration-none text-dark">
+                        Contact
+                    </a>
+
+                </div>
+
+
+                <!-- Download Resume -->
+
+                <div>
+
+                    <a href="./resume.pdf" download class="btn btn-primary rounded-pill px-4">
+
+                        <i class="fa-solid fa-download me-2"></i>
+
+                        Download Resume
+
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <!-- Middle Navigation -->
+            <!-- ================= MOBILE HEADER ================= -->
 
-            <div class="bg-white rounded-pill d-flex justify-content-center align-items-center gap-4 px-4 py-2">
+            <div class="d-flex d-md-none justify-content-between align-items-center">
+
+                <div>
+
+                    <h2 class="mb-0 fw-bold">
+                        <span style="color:#168cff;">D</span>hyani
+                    </h2>
+
+                </div>
+
+
+                <button class="btn btn-primary rounded-circle"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================================= -->
+    <!--                  MOBILE MENU                      -->
+    <!-- ================================================= -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title text-dark fw-bold">
+
+                <span style="color:#168cff;">D</span>hyani
+
+            </h5>
+
+            <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+
+        <div class="offcanvas-body">
+
+            <div class="d-flex flex-column gap-3">
 
                 <a href="#home"
-                    class="text-decoration-none --bs-primary-bg-subtle">
+                    class="text-dark text-decoration-none fs-5"
+                    data-bs-dismiss="offcanvas">
+
+                    <i class="fa-solid fa-house me-2"
+                        style="color:#168cff;">
+                    </i>
 
                     Home
 
                 </a>
 
+
                 <a href="#about"
-                    class="text-decoration-none --bs-primary-bg-subtle">
+                    class="text-dark text-decoration-none fs-5"
+                    data-bs-dismiss="offcanvas">
+
+                    <i class="fa-solid fa-user me-2"
+                        style="color:#168cff;">
+                    </i>
 
                     About
 
                 </a>
 
+
                 <a href="#skills"
-                    class="text-decoration-none --bs-primary-bg-subtle">
+                    class="text-dark text-decoration-none fs-5"
+                    data-bs-dismiss="offcanvas">
+
+                    <i class="fa-solid fa-code me-2"
+                        style="color:#168cff;">
+                    </i>
 
                     Skills
 
                 </a>
 
+
                 <a href="#projects"
-                    class="text-decoration-none --bs-primary-bg-subtle">
+                    class="text-dark text-decoration-none fs-5"
+                    data-bs-dismiss="offcanvas">
+
+                    <i class="fa-solid fa-folder-open me-2"
+                        style="color:#168cff;">
+                    </i>
 
                     Projects
 
                 </a>
 
+
                 <a href="#contact"
-                    class="text-decoration-none --bs-primary-bg-subtle">
+                    class="text-dark text-decoration-none fs-5"
+                    data-bs-dismiss="offcanvas">
+
+                    <i class="fa-solid fa-envelope me-2"
+                        style="color:#168cff;">
+                    </i>
 
                     Contact
 
                 </a>
 
-            </div>
 
+                <hr>
 
-            <!-- Download Resume -->
-
-            <div>
 
                 <a href="./resume.pdf"
                     download
-                    class="btn btn-primary rounded-pill px-4">
+                    class="btn btn-primary rounded-pill">
 
                     <i class="fa-solid fa-download me-2"></i>
 
@@ -284,169 +466,8 @@
 
         </div>
 
-
-        <!-- ================= MOBILE HEADER ================= -->
-
-        <div class="d-flex d-md-none justify-content-between align-items-center">
-
-            <!-- Logo -->
-
-            <div>
-
-                <h2 class="mb-0 fw-bold">
-
-                    <span style="color:#168cff;">D</span>hyani
-
-                </h2>
-
-            </div>
-
-
-            <!-- Menu Button -->
-
-            <button class="btn btn-primary rounded-circle"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#mobileMenu">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </button>
-
-        </div>
-
     </div>
 
-</header>
-
-
-
-<!-- ================================================= -->
-<!--                  MOBILE MENU                      -->
-<!-- ================================================= -->
-
-<div class="offcanvas offcanvas-end"
-    tabindex="-1"
-    id="mobileMenu">
-
-
-    <!-- Mobile Menu Header -->
-
-    <div class="offcanvas-header">
-
-        <h5 class="offcanvas-title text-dark fw-bold">
-
-            <span style="color:#168cff;">D</span>hyani
-
-        </h5>
-
-        <button type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas">
-
-        </button>
-
-    </div>
-
-
-    <!-- Mobile Menu Body -->
-
-    <div class="offcanvas-body">
-
-        <div class="d-flex flex-column gap-3">
-
-
-            <!-- Home -->
-
-            <a href="#home"
-                class="text-dark text-decoration-none fs-5"
-                data-bs-dismiss="offcanvas">
-
-                <i class="fa-solid fa-house me-2"
-                    style="color:#168cff;"></i>
-
-                Home
-
-            </a>
-
-
-            <!-- About -->
-
-            <a href="#about"
-                class="text-dark text-decoration-none fs-5"
-                data-bs-dismiss="offcanvas">
-
-                <i class="fa-solid fa-user me-2"
-                    style="color:#168cff;"></i>
-
-                About
-
-            </a>
-
-
-            <!-- Skills -->
-
-            <a href="#skills"
-                class="text-dark text-decoration-none fs-5"
-                data-bs-dismiss="offcanvas">
-
-                <i class="fa-solid fa-code me-2"
-                    style="color:#168cff;"></i>
-
-                Skills
-
-            </a>
-
-
-            <!-- Projects -->
-
-            <a href="#projects"
-                class="text-dark text-decoration-none fs-5"
-                data-bs-dismiss="offcanvas">
-
-                <i class="fa-solid fa-folder-open me-2"
-                    style="color:#168cff;"></i>
-
-                Projects
-
-            </a>
-
-
-            <!-- Contact -->
-
-            <a href="#contact"
-                class="text-dark text-decoration-none fs-5"
-                data-bs-dismiss="offcanvas">
-
-                <i class="fa-solid fa-envelope me-2"
-                    style="color:#168cff;"></i>
-
-                Contact
-
-            </a>
-
-
-            <hr>
-
-
-            <!-- Download Resume -->
-
-            <a href="./resume.pdf"
-                download
-                class="btn btn-primary rounded-pill">
-
-                <i class="fa-solid fa-download me-2"></i>
-
-                Download Resume
-
-            </a>
-
-
-        </div>
-
-    </div>
-
-</div>
 
 
     <!-- ================================================= -->
@@ -470,25 +491,28 @@
                     <div class="col-12 col-lg-6 text-center text-lg-start">
 
                         <p class="text-primary fw-bold fs-5">
-
                             DHYANI
-
                         </p>
 
 
                         <h1 class="display-1 fw-bold">
-
                             HEY! I'M DHYANI.
+                        </h1>
 
-                            <br>
 
-                            <span class="text-primary">
+                        <h2 class="hero-role">
 
-                                I'M A WEB DEVELOPER
+                            I am a
 
+                            <span class="typewriter-text"
+                                id="typewriter">
                             </span>
 
-                        </h1>
+                            <span class="typing-cursor">
+                                |
+                            </span>
+
+                        </h2>
 
 
                         <p class="text-secondary fs-5 py-3">
@@ -501,13 +525,13 @@
                         </p>
 
 
-                        <div
-                            class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 flex-wrap">
+                        <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 flex-wrap">
 
 
                             <!-- GitHub -->
 
-                            <a href="https://github.com/" target="_blank"
+                            <a href="https://github.com/"
+                                target="_blank"
                                 class="btn btn-outline-primary rounded-circle">
 
                                 <i class="fa-brands fa-github"></i>
@@ -517,7 +541,8 @@
 
                             <!-- YouTube -->
 
-                            <a href="https://dhyanisatasiya.github.io/MY-Youtube/" target="_blank"
+                            <a href="https://dhyanisatasiya.github.io/MY-Youtube/"
+                                target="_blank"
                                 class="btn btn-outline-primary rounded-circle">
 
                                 <i class="fa-brands fa-youtube"></i>
@@ -527,7 +552,8 @@
 
                             <!-- LinkedIn -->
 
-                            <a href="https://www.linkedin.com/feed/" target="_blank"
+                            <a href="https://www.linkedin.com/feed/"
+                                target="_blank"
                                 class="btn btn-outline-primary rounded-circle">
 
                                 <i class="fa-brands fa-linkedin-in"></i>
@@ -540,13 +566,17 @@
                     </div>
 
 
+
                     <!-- RIGHT -->
 
                     <div class="col-12 col-lg-6 text-center mt-5 mt-lg-0">
 
-                        <img src="./bpic.png" class="img-fluid rounded-circle profile-img" alt="Dhyani">
+                        <img src="./bpic.png"
+                            class="img-fluid rounded-circle profile-img"
+                            alt="Dhyani">
 
                     </div>
+
 
                 </div>
 
@@ -555,14 +585,15 @@
         </section>
 
 
+
         <!-- ================= ABOUT ================= -->
 
-        <section id="about" class="py-5" style="background-color:#061a2e;">
+        <section id="about"
+            class="py-5"
+            style="background-color:#061a2e;">
 
             <div class="container">
 
-
-                <!-- Heading -->
 
                 <div class="text-center mb-5">
 
@@ -571,17 +602,13 @@
                         About
 
                         <span style="color:#168cff;">
-
                             Me
-
                         </span>
 
                     </h1>
 
                     <p style="color:#b8c7d9;">
-
                         My introduction and professional information
-
                     </p>
 
                 </div>
@@ -599,19 +626,17 @@
 
                             <div class="text-center">
 
-                                <img src="./bpic.png" alt="Dhyani" class="img-fluid rounded-circle"
+                                <img src="./bpic.png"
+                                    alt="Dhyani"
+                                    class="img-fluid rounded-circle"
                                     style="width:180px;height:180px;object-fit:cover;border:4px solid #168cff;outline:3px solid #75b3f2;outline-offset:6px;">
 
                                 <h2 class="text-white fw-bold mt-4">
-
                                     Dhyani Satasiya
-
                                 </h2>
 
                                 <h5 style="color:#168cff;">
-
                                     Web Developer
-
                                 </h5>
 
                             </div>
@@ -622,7 +647,9 @@
 
                             <p class="text-white">
 
-                                <i class="fa-solid fa-envelope me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-envelope me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Email: dhyanisatasiya55@gmail.com
 
@@ -631,7 +658,9 @@
 
                             <p class="text-white">
 
-                                <i class="fa-solid fa-location-dot me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-location-dot me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Location: Amreli, Gujarat
 
@@ -640,6 +669,7 @@
                         </div>
 
                     </div>
+
 
 
                     <!-- RIGHT CARD -->
@@ -654,9 +684,7 @@
                                 Professional
 
                                 <span style="color:#168cff;">
-
                                     Profile
-
                                 </span>
 
                             </h3>
@@ -674,7 +702,9 @@
 
                             <h4 class="text-white mt-4">
 
-                                <i class="fa-solid fa-graduation-cap me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-graduation-cap me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Education
 
@@ -684,9 +714,7 @@
                             <p style="color:#b8c7d9;">
 
                                 <b class="text-white">
-
                                     Computer / IT Student
-
                                 </b>
 
                                 <br>
@@ -699,7 +727,9 @@
 
                             <h4 class="text-white mt-4">
 
-                                <i class="fa-solid fa-laptop-code me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-laptop-code me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Skills
 
@@ -708,28 +738,24 @@
 
                             <div class="d-flex flex-wrap gap-2">
 
-                                <span class="badge rounded-pill p-2" style="background:#168cff;">
-
+                                <span class="badge rounded-pill p-2"
+                                    style="background:#168cff;">
                                     HTML
-
                                 </span>
 
-                                <span class="badge rounded-pill p-2" style="background:#168cff;">
-
+                                <span class="badge rounded-pill p-2"
+                                    style="background:#168cff;">
                                     CSS
-
                                 </span>
 
-                                <span class="badge rounded-pill p-2" style="background:#168cff;">
-
+                                <span class="badge rounded-pill p-2"
+                                    style="background:#168cff;">
                                     Bootstrap
-
                                 </span>
 
-                                <span class="badge rounded-pill p-2" style="background:#168cff;">
-
+                                <span class="badge rounded-pill p-2"
+                                    style="background:#168cff;">
                                     C Programming
-
                                 </span>
 
                             </div>
@@ -737,7 +763,9 @@
 
                             <h4 class="text-white mt-4">
 
-                                <i class="fa-solid fa-bullseye me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-bullseye me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Career Goal
 
@@ -756,7 +784,8 @@
                             </p>
 
 
-                            <a href="#contact" class="btn rounded-pill px-4 mt-2"
+                            <a href="#contact"
+                                class="btn rounded-pill px-4 mt-2"
                                 style="background:#168cff;color:white;">
 
                                 Contact Me
@@ -772,255 +801,274 @@
             </div>
 
         </section>
+
+
+
         <!-- ================= MY SKILLS ================= -->
 
-<section id="skills" class="py-5">
+        <section id="skills"
+            class="py-5">
 
-    <div class="container">
-
-        <!-- TITLE -->
-        <div class="d-flex align-items-center justify-content-center gap-3 mb-5">
-
-            <h2 class="text-white fw-bold m-0 display-5">
-
-                My <span style="color:#168cff;">Skills</span>
-
-            </h2>
-
-        </div>
+            <div class="container">
 
 
-        <!-- SKILL CARDS -->
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-5">
 
-        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-7 g-3 justify-content-center">
+                    <h2 class="text-white fw-bold m-0 display-5">
 
+                        My
+                        <span style="color:#168cff;">
+                            Skills
+                        </span>
 
-            <!-- HTML5 -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <i class="fa-brands fa-html5 fs-1 mb-2"
-                        style="color:#168cff;"></i>
-
-                    <h6 class="text-white fw-bold mb-1">
-                        HTML5
-                    </h6>
-
-                    <small style="color:#b8c7d9;">
-                        Frontend
-                    </small>
+                    </h2>
 
                 </div>
 
-            </div>
+
+                <div class="row row-cols-2 row-cols-md-4 row-cols-lg-7 g-3 justify-content-center">
 
 
-            <!-- CSS3 -->
+                    <!-- HTML -->
 
-            <div class="col">
+                    <div class="col">
 
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
 
-                    <i class="fa-brands fa-css3-alt fs-1 mb-2"
-                        style="color:#168cff;"></i>
+                            <i class="fa-brands fa-html5 fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
 
-                    <h6 class="text-white fw-bold mb-1">
-                        CSS3
-                    </h6>
+                            <h6 class="text-white fw-bold mb-1">
+                                HTML5
+                            </h6>
 
-                    <small style="color:#b8c7d9;">
-                        Frontend
-                    </small>
+                            <small style="color:#b8c7d9;">
+                                Frontend
+                            </small>
 
-                </div>
-
-            </div>
-
-
-            <!-- Bootstrap -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <i class="fa-brands fa-bootstrap fs-1 mb-2"
-                        style="color:#168cff;"></i>
-
-                    <h6 class="text-white fw-bold mb-1">
-                        Bootstrap
-                    </h6>
-
-                    <small style="color:#b8c7d9;">
-                        Frontend
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <!-- C -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <i class="fa-solid fa-c fs-1 mb-2"
-                        style="color:#168cff;"></i>
-
-                    <h6 class="text-white fw-bold mb-1">
-                        C
-                    </h6>
-
-                    <small style="color:#b8c7d9;">
-                        Programming
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <!-- C++ -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <i class="fa-solid fa-code fs-1 mb-2"
-                        style="color:#168cff;"></i>
-
-                    <h6 class="text-white fw-bold mb-1">
-                        C++
-                    </h6>
-
-                    <small style="color:#b8c7d9;">
-                        Programming
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <!-- PHP -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <i class="fa-brands fa-php fs-1 mb-2"
-                        style="color:#168cff;"></i>
-
-                    <h6 class="text-white fw-bold mb-1">
-                        PHP
-                    </h6>
-
-                    <small style="color:#b8c7d9;">
-                        Backend
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <!-- MySQL -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <i class="fa-solid fa-database fs-1 mb-2"
-                        style="color:#168cff;"></i>
-
-                    <h6 class="text-white fw-bold mb-1">
-                        MySQL
-                    </h6>
-
-                    <small style="color:#b8c7d9;">
-                        Database
-                    </small>
-
-                </div>
-
-            </div>
-
-
-            <!-- Git & GitHub -->
-
-            <div class="col">
-
-                <div class="skill-card border rounded-4 text-center p-3 h-100"
-                    style="background-color:#0a2540;border-color:#168cff !important;">
-
-                    <div class="mb-2">
-
-                        <i class="fa-brands fa-git-alt fs-2 me-2"
-                            style="color:#168cff;"></i>
-
-                        <i class="fa-brands fa-github fs-2"
-                            style="color:#168cff;"></i>
+                        </div>
 
                     </div>
 
-                    <h6 class="text-white fw-bold mb-1">
-                        Git & GitHub
-                    </h6>
 
-                    <small style="color:#b8c7d9;">
-                        Tools
-                    </small>
+                    <!-- CSS -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <i class="fa-brands fa-css3-alt fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                CSS3
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Frontend
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bootstrap -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <i class="fa-brands fa-bootstrap fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                Bootstrap
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Frontend
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- C -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <i class="fa-solid fa-c fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                C
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Programming
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- C++ -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <i class="fa-solid fa-code fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                C++
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Programming
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHP -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <i class="fa-brands fa-php fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                PHP
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Backend
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MySQL -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <i class="fa-solid fa-database fs-1 mb-2"
+                                style="color:#168cff;">
+                            </i>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                MySQL
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Database
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GitHub -->
+
+                    <div class="col">
+
+                        <div class="skill-card border rounded-4 text-center p-3 h-100"
+                            style="background-color:#0a2540;border-color:#168cff !important;">
+
+                            <div class="mb-2">
+
+                                <i class="fa-brands fa-git-alt fs-2 me-2"
+                                    style="color:#168cff;">
+                                </i>
+
+                                <i class="fa-brands fa-github fs-2"
+                                    style="color:#168cff;">
+                                </i>
+
+                            </div>
+
+                            <h6 class="text-white fw-bold mb-1">
+                                Git & GitHub
+                            </h6>
+
+                            <small style="color:#b8c7d9;">
+                                Tools
+                            </small>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
-        <!-- ================= project ================= -->
 
-        <!-- SKILLS -->
-        <section id="projects" class="container py-5">
+        <!-- ================= PROJECTS ================= -->
 
-            <!-- TITLE -->
+        <section id="projects"
+            class="container py-5">
+
             <div class="h1 text-center mt-4 mb-5">
 
-                <span style="color:#168cff;">M</span>y
+                <span style="color:#168cff;">
+                    M
+                </span>y
 
-                <span style="color:#168cff;">P</span>rojects
+                <span style="color:#168cff;">
+                    P
+                </span>rojects
 
             </div>
 
 
-            <!-- CARDS -->
             <div class="row justify-content-center g-4">
 
 
                 <!-- HTML -->
+
                 <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card h-100 text-center p-4 skill-card" style="background-color:#0a2540;
-                       border:1px solid #168cff;
-                       border-radius:20px;">
+                    <div class="card h-100 text-center p-4 skill-card"
+                        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
 
                         <div class="mb-3">
 
-                            <i class="fa-brands fa-html5" style="font-size:60px;color:#168cff;"></i>
+                            <i class="fa-brands fa-html5"
+                                style="font-size:60px;color:#168cff;">
+                            </i>
 
                         </div>
 
@@ -1031,13 +1079,17 @@
                             </h4>
 
                             <p style="color:#b8c7d9;">
+
                                 HTML is used to create the structure of
                                 web pages. It defines headings, paragraphs,
                                 images, links, forms, tables, and sections.
+
                             </p>
 
-                            <a href="./html/html1.html" class="btn rounded-pill px-4"
-                                style="background-color:#168cff;color:white;" target="_blank">
+                            <a href="./html/html1.html"
+                                class="btn rounded-pill px-4"
+                                style="background-color:#168cff;color:white;"
+                                target="_blank">
 
                                 Open Work
 
@@ -1050,16 +1102,19 @@
                 </div>
 
 
+
                 <!-- CSS -->
+
                 <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card h-100 text-center p-4 skill-card" style="background-color:#0a2540;
-                       border:1px solid #168cff;
-                       border-radius:20px;">
+                    <div class="card h-100 text-center p-4 skill-card"
+                        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
 
                         <div class="mb-3">
 
-                            <i class="fa-brands fa-css3-alt" style="font-size:60px;color:#168cff;"></i>
+                            <i class="fa-brands fa-css3-alt"
+                                style="font-size:60px;color:#168cff;">
+                            </i>
 
                         </div>
 
@@ -1070,13 +1125,17 @@
                             </h4>
 
                             <p style="color:#b8c7d9;">
+
                                 CSS is used to style and design web pages.
                                 It controls colors, fonts, spacing, layouts,
                                 animations, and responsive designs.
+
                             </p>
 
-                            <a href="./CSS/css.html" class="btn rounded-pill px-4"
-                                style="background-color:#168cff;color:white;" target="_blank">
+                            <a href="./CSS/css.html"
+                                class="btn rounded-pill px-4"
+                                style="background-color:#168cff;color:white;"
+                                target="_blank">
 
                                 Open Work
 
@@ -1089,16 +1148,19 @@
                 </div>
 
 
+
                 <!-- BOOTSTRAP -->
+
                 <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card h-100 text-center p-4 skill-card" style="background-color:#0a2540;
-                       border:1px solid #168cff;
-                       border-radius:20px;">
+                    <div class="card h-100 text-center p-4 skill-card"
+                        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
 
                         <div class="mb-3">
 
-                            <i class="fa-brands fa-bootstrap" style="font-size:60px;color:#168cff;"></i>
+                            <i class="fa-brands fa-bootstrap"
+                                style="font-size:60px;color:#168cff;">
+                            </i>
 
                         </div>
 
@@ -1109,13 +1171,17 @@
                             </h4>
 
                             <p style="color:#b8c7d9;">
+
                                 Bootstrap is a popular CSS framework used
                                 to create responsive and modern websites
                                 quickly with ready-made components.
+
                             </p>
 
-                            <a href="./Bootstrap/BOOTSTRAP.html" class="btn rounded-pill px-4"
-                                style="background-color:#168cff;color:white;" target="_blank">
+                            <a href="./Bootstrap/BOOTSTRAP.html"
+                                class="btn rounded-pill px-4"
+                                style="background-color:#168cff;color:white;"
+                                target="_blank">
 
                                 Open Work
 
@@ -1128,16 +1194,19 @@
                 </div>
 
 
+
                 <!-- C -->
+
                 <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card h-100 text-center p-4 skill-card" style="background-color:#0a2540;
-                       border:1px solid #168cff;
-                       border-radius:20px;">
+                    <div class="card h-100 text-center p-4 skill-card"
+                        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
 
                         <div class="mb-3">
 
-                            <i class="fa-solid fa-c" style="font-size:60px;color:#168cff;"></i>
+                            <i class="fa-solid fa-c"
+                                style="font-size:60px;color:#168cff;">
+                            </i>
 
                         </div>
 
@@ -1148,14 +1217,18 @@
                             </h4>
 
                             <p style="color:#b8c7d9;">
+
                                 C is a powerful programming language used
                                 to learn programming fundamentals. It supports
                                 variables, functions, arrays, pointers,
                                 and data structures.
+
                             </p>
 
-                            <a href="./C-lang/index.html" class="btn rounded-pill px-4"
-                                style="background-color:#168cff;color:white;" target="_blank">
+                            <a href="./C-lang/index.html"
+                                class="btn rounded-pill px-4"
+                                style="background-color:#168cff;color:white;"
+                                target="_blank">
 
                                 Open Work
 
@@ -1168,16 +1241,19 @@
                 </div>
 
 
+
                 <!-- C++ -->
+
                 <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card h-100 text-center p-4 skill-card" style="background-color:#0a2540;
-                       border:1px solid #168cff;
-                       border-radius:20px;">
+                    <div class="card h-100 text-center p-4 skill-card"
+                        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
 
                         <div class="mb-3">
 
-                            <i class="fa-solid fa-code" style="font-size:60px;color:#168cff;"></i>
+                            <i class="fa-solid fa-code"
+                                style="font-size:60px;color:#168cff;">
+                            </i>
 
                         </div>
 
@@ -1188,13 +1264,17 @@
                             </h4>
 
                             <p style="color:#b8c7d9;">
+
                                 C++ is a powerful programming language used
                                 to learn object-oriented programming and
                                 software development with OOPs concepts.
+
                             </p>
 
-                            <a href="./C++/index.html" class="btn rounded-pill px-4"
-                                style="background-color:#168cff;color:white;" target="_blank">
+                            <a href="./C++/index.html"
+                                class="btn rounded-pill px-4"
+                                style="background-color:#168cff;color:white;"
+                                target="_blank">
 
                                 Open Work
 
@@ -1213,21 +1293,24 @@
 
 
 
-
-
         <!-- ================= CONTACT ================= -->
 
-        <section id="contact" class="py-5" style="background-color:#061a2e;">
-
+        <section id="contact"
+            class="py-5"
+            style="background-color:#061a2e;">
 
             <div class="container">
 
 
                 <div class="text-center h1">
 
-                    <span style="color:#168cff;">C</span>ontact
+                    <span style="color:#168cff;">
+                        C
+                    </span>ontact
 
-                    <span style="color:#168cff;">U</span>s
+                    <span style="color:#168cff;">
+                        M
+                    </span>e
 
                 </div>
 
@@ -1239,16 +1322,15 @@
 
                     <div class="col-12 col-md-6 text-white">
 
-                        <div class="p-4 rounded-4" style="background-color:#0a2540;border:1px solid #168cff;">
+                        <div class="p-4 rounded-4"
+                            style="background-color:#0a2540;border:1px solid #168cff;">
 
                             <h2 class="fw-bold mb-3">
 
                                 Let's
 
                                 <span style="color:#168cff;">
-
                                     Connect
-
                                 </span>
 
                             </h2>
@@ -1263,15 +1345,15 @@
 
 
                             <h5 class="fw-bold mt-4">
-
                                 What I Can Help With
-
                             </h5>
 
 
                             <p style="color:#b8c7d9;">
 
-                                <i class="fa-solid fa-check me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-check me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Website Design
 
@@ -1280,7 +1362,9 @@
 
                             <p style="color:#b8c7d9;">
 
-                                <i class="fa-solid fa-check me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-check me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Responsive Websites
 
@@ -1289,7 +1373,9 @@
 
                             <p style="color:#b8c7d9;">
 
-                                <i class="fa-solid fa-check me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-check me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Frontend Development
 
@@ -1298,25 +1384,30 @@
 
                             <p style="color:#b8c7d9;">
 
-                                <i class="fa-solid fa-check me-2" style="color:#168cff;"></i>
+                                <i class="fa-solid fa-check me-2"
+                                    style="color:#168cff;">
+                                </i>
 
                                 Web Projects & Collaboration
 
                             </p>
 
 
-                            <div class="mt-4 p-3 rounded-3" style="background-color:#061a2e;">
+                            <div class="mt-4 p-3 rounded-3"
+                                style="background-color:#061a2e;">
 
                                 <h6 class="fw-bold">
 
-                                    <i class="fa-solid fa-circle-check me-2" style="color:#168cff;"></i>
+                                    <i class="fa-solid fa-circle-check me-2"
+                                        style="color:#168cff;">
+                                    </i>
 
                                     Available for Projects
 
                                 </h6>
 
-
-                                <p class="mb-0" style="color:#b8c7d9;">
+                                <p class="mb-0"
+                                    style="color:#b8c7d9;">
 
                                     Feel free to contact me and let's
                                     create something amazing together.
@@ -1328,6 +1419,7 @@
                         </div>
 
                     </div>
+
 
 
                     <!-- RIGHT -->
@@ -1342,31 +1434,39 @@
                                 Let's Stay
 
                                 <span style="color:#168cff;">
-
                                     Connected
-
                                 </span>
 
                             </h4>
 
 
-                            <input type="text" class="form-control mb-3 rounded-3" placeholder="Your Name*"
+                            <input type="text"
+                                class="form-control mb-3 rounded-3"
+                                placeholder="Your Name*"
                                 style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
 
 
-                            <input type="email" class="form-control mb-3 rounded-3" placeholder="Email ID*"
+                            <input type="email"
+                                class="form-control mb-3 rounded-3"
+                                placeholder="Email ID*"
                                 style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
 
 
-                            <input type="tel" class="form-control mb-3 rounded-3" placeholder="Phone No*"
+                            <input type="tel"
+                                class="form-control mb-3 rounded-3"
+                                placeholder="Phone No*"
                                 style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
 
 
-                            <textarea class="form-control mb-3 rounded-3" rows="4" placeholder="Message*"
+                            <textarea
+                                class="form-control mb-3 rounded-3"
+                                rows="4"
+                                placeholder="Message*"
                                 style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;"></textarea>
 
 
-                            <button type="submit" class="btn rounded-pill px-4 py-3 text-white"
+                            <button type="submit"
+                                class="btn rounded-pill px-4 py-3 text-white"
                                 style="background-color:#168cff;">
 
                                 <i class="fa-regular fa-envelope me-2"></i>
@@ -1389,14 +1489,10 @@
     </main>
 
 
-    <!-- ================================================= -->
-    <!--                       FOOTER                       -->
-    <!-- ================================================= -->
+
+    <!-- ================= FOOTER ================= -->
 
     <footer>
-
-
-        <!-- ONLY ONE LAST LINE -->
 
         <div class="footer-bottom">
 
@@ -1404,14 +1500,89 @@
 
         </div>
 
-        </div>
-
     </footer>
 
 
-    <!-- Bootstrap JS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ================================================= -->
+    <!--                  TYPEWRITER JS                    -->
+    <!-- ================================================= -->
+
+    <script>
+
+        const words = [
+            "Web Developer",
+            "BCA Student",
+            "Programmer",
+            "Designer"
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+
+        function typeWriter() {
+
+            const typewriter =
+                document.getElementById("typewriter");
+
+            const currentWord =
+                words[wordIndex];
+
+
+            if (!isDeleting) {
+
+                typewriter.textContent =
+                    currentWord.substring(0, charIndex + 1);
+
+                charIndex++;
+
+
+                if (charIndex === currentWord.length) {
+
+                    isDeleting = true;
+
+                    setTimeout(typeWriter, 1500);
+
+                    return;
+
+                }
+
+            }
+
+            else {
+
+                typewriter.textContent =
+                    currentWord.substring(0, charIndex - 1);
+
+                charIndex--;
+
+
+                if (charIndex === 0) {
+
+                    isDeleting = false;
+
+                    wordIndex =
+                        (wordIndex + 1) % words.length;
+
+                }
+
+            }
+
+
+            setTimeout(
+                typeWriter,
+                isDeleting ? 70 : 120
+            );
+
+        }
+
+
+        typeWriter();
+
+    </script>
+
 
 </body>
 
