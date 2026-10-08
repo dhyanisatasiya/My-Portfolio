@@ -467,7 +467,7 @@
 
                     <div class="col-12 col-lg-6 text-center text-lg-start">
 
-                       
+
 
                         <h1 class="display-1 fw-bold">
                             HEY! I'M DHYANI.
@@ -1308,47 +1308,44 @@
                 </div>
                 <!-- MY RECORDED VIDEOS -->
 
-<div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
 
-    <div class="card h-100 text-center p-4 skill-card"
-        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
+                    <div class="card h-100 text-center p-4 skill-card"
+                        style="background-color:#0a2540;border:1px solid #168cff;border-radius:20px;">
 
-        <div class="mb-3">
+                        <div class="mb-3">
 
-            <i class="fa-solid fa-circle-play"
-                style="font-size:60px;color:#168cff;">
-            </i>
+                            <i class="fa-solid fa-circle-play" style="font-size:60px;color:#168cff;">
+                            </i>
 
-        </div>
+                        </div>
 
-        <div class="card-body">
+                        <div class="card-body">
 
-            <h4 class="fw-bold text-white">
-                My Recorded Videos
-            </h4>
+                            <h4 class="fw-bold text-white">
+                                My Recorded Videos
+                            </h4>
 
-            <p style="color:#b8c7d9;">
+                            <p style="color:#b8c7d9;">
 
-                Watch my recorded videos related to
-                programming, web development, projects,
-                and my learning journey.
+                                Watch my recorded videos related to
+                                programming, web development, projects,
+                                and my learning journey.
 
-            </p>
+                            </p>
 
-            <a href="https://dhyanisatasiya.github.io/MY-Youtube/"
-                class="btn rounded-pill px-4"
-                style="background-color:#168cff;color:white;"
-                target="_blank">
+                            <a href="https://dhyanisatasiya.github.io/MY-Youtube/" class="btn rounded-pill px-4"
+                                style="background-color:#168cff;color:white;" target="_blank">
 
-                Watch Videos
+                                Watch Videos
 
-            </a>
+                            </a>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
-</div>
+                </div>
 
 
             </div>
@@ -1472,43 +1469,51 @@
 
                     <!-- RIGHT -->
 
+
                     <div class="col-12 col-md-6">
 
                         <form class="contact-form rounded-4 p-4"
-                            style="background-color:#0a2540;border:1px solid #168cff;">
+                            style="background-color:#0a2540;border:1px solid #168cff;"
+                            action="https://api.web3forms.com/submit" method="POST">
+
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="59c6d2db-6178-49b7-9018-496c27c659df">
+
+                            <!-- Email Subject -->
+                            <input type="hidden" name="subject" value="New Connect Message - Portfolio">
+
+                            <!-- Form Name -->
+                            <input type="hidden" name="from_name" value="Dhyani Portfolio">
 
                             <h4 class="fw-bold mb-4 text-white">
-
                                 Let's Stay
-
                                 <span style="color:#168cff;">
                                     Connected
                                 </span>
-
                             </h4>
 
+                            <!-- Name -->
+                            <input type="text" name="name" class="form-control mb-3 rounded-3" placeholder="Your Name*"
+                                required style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
 
-                            <input type="text" class="form-control mb-3 rounded-3" placeholder="Your Name*"
-                                style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
+                            <!-- Email -->
+                            <input type="email" name="email" class="form-control mb-3 rounded-3" placeholder="Email ID*"
+                                required style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
 
+                            <!-- Phone -->
+                            <input type="tel" name="phone" class="form-control mb-3 rounded-3" placeholder="Phone No*"
+                                required style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
 
-                            <input type="email" class="form-control mb-3 rounded-3" placeholder="Email ID*"
-                                style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
-
-
-                            <input type="tel" class="form-control mb-3 rounded-3" placeholder="Phone No*"
-                                style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;">
-
-
-                            <textarea class="form-control mb-3 rounded-3" rows="4" placeholder="Message*"
+                            <!-- Message -->
+                            <textarea name="message" class="form-control mb-3 rounded-3" rows="4" placeholder="Message*"
+                                required
                                 style="background-color:#061a2e;border:1px solid #168cff;color:#ffffff;"></textarea>
 
-
+                            <!-- Submit -->
                             <button type="submit" class="btn rounded-pill px-4 py-3 text-white"
                                 style="background-color:#168cff;">
 
                                 <i class="fa-regular fa-envelope me-2"></i>
-
                                 Send Email
 
                             </button>
