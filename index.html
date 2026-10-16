@@ -1,8 +1,8 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,12 +11,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 
     <style>
         * {
@@ -25,14 +21,18 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
         body {
             background-color: #061a2e;
             color: white;
             font-family: Arial, sans-serif;
         }
 
-
-        /* ================= FIXED HEADER ================= */
+        /* FIXED HEADER */
 
         .fixed-header {
             position: fixed;
@@ -49,8 +49,7 @@
             padding-top: 95px;
         }
 
-
-        /* ================= HERO ================= */
+        /* HERO */
 
         .hero-role {
             font-size: 35px;
@@ -60,14 +59,13 @@
             line-height: 1.3;
         }
 
-        .typewriter-text {
+        .typewriter-text,
+        .typing-cursor {
             color: #0d6efd;
             font-weight: 700;
         }
 
         .typing-cursor {
-            color: #0d6efd;
-            font-weight: bold;
             animation: blink 0.7s infinite;
         }
 
@@ -77,8 +75,7 @@
             }
         }
 
-
-        /* ================= PROFILE IMAGE ================= */
+        /* PROFILE IMAGE */
 
         .profile-img {
             max-height: 550px;
@@ -94,31 +91,25 @@
             transform: scale(1.08);
         }
 
-
-        /* ================= WORK CARD ================= */
+        /* WORK CARDS */
 
         .work-card {
             transition: 0.4s ease;
         }
 
         @media (min-width: 769px) {
-
             .work-card:hover {
                 transform: translateY(-10px) scale(1.03);
             }
-
         }
 
         @media (max-width: 768px) {
-
             .work-card:active {
                 transform: translateY(-10px) scale(1.03);
             }
-
         }
 
-
-        /* ================= CONTACT FORM ================= */
+        /* CONTACT FORM */
 
         .contact-form input::placeholder,
         .contact-form textarea::placeholder {
@@ -126,8 +117,7 @@
             opacity: 1;
         }
 
-
-        /* ================= FOOTER ================= */
+        /* FOOTER */
 
         .footer {
             background-color: #041321;
@@ -190,14 +180,13 @@
 
         .footer-bottom {
             border-top: 1px solid #183c5d;
-            margin: 35px 0 35px 0;
+            margin: 35px 0;
             padding-top: 20px;
             color: #8da7bf;
             text-align: center;
         }
 
-
-        /* ================= SKILL CARD ================= */
+        /* SKILL CARD */
 
         .skill-card {
             transition: 0.3s ease;
@@ -208,10 +197,98 @@
             box-shadow: 0 10px 25px rgba(22, 140, 255, 0.25);
         }
 
+        /* MOBILE MENU */
 
-        /* ================= RESPONSIVE ================= */
+        .mobile-menu-button {
+            display: none;
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background: #ffffff !important;
+            color: #0d6efd !important;
+            border: 1px solid #0d6efd !important;
+            box-shadow: none !important;
+            text-decoration: none;
+        }
 
-        @media (max-width: 768px) {
+        .mobile-menu-button i {
+            color: #0d6efd;
+            font-size: 20px;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 767.98px) {
+
+            .fixed-header .container {
+                position: relative;
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+            }
+
+            .mobile-menu-button {
+                display: inline-flex;
+            }
+
+            /* Open menu without JavaScript */
+
+            .mobile-menu:target {
+                display: flex;
+            }
+
+            .mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 12px;
+                right: 12px;
+                width: auto;
+                padding: 12px;
+                background: #ffffff;
+                border: 1px solid #e1e8f0;
+                border-radius: 0 0 16px 16px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+                flex-direction: column;
+                gap: 4px;
+                z-index: 2000;
+            }
+
+            /* Menu links */
+
+            .mobile-menu a {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 13px 15px;
+                color: #111111 !important;
+                background: #ffffff;
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+
+            /* Blue icons */
+
+            .mobile-menu a i {
+                color: #0d6efd !important;
+                width: 24px;
+                margin-right: 10px;
+                text-align: center;
+                font-size: 17px;
+            }
+
+            .mobile-menu a:hover,
+            .mobile-menu a:focus {
+                background: #edf5ff;
+                color: #111111 !important;
+            }
+
+            section[id] {
+                scroll-margin-top: 100px;
+            }
 
             .footer {
                 text-align: center;
@@ -232,9 +309,7 @@
             .display-1 {
                 font-size: 3rem;
             }
-
         }
-
 
         @media (max-width: 400px) {
 
@@ -249,14 +324,116 @@
             .display-1 {
                 font-size: 2.5rem;
             }
-
         }
     </style>
-
 </head>
 
-
 <body>
+
+    <!-- FIXED HEADER -->
+
+    <header class="fixed-header">
+        <div class="container py-4">
+
+            <!-- DESKTOP HEADER -->
+
+            <div class="d-none d-md-flex justify-content-between align-items-center">
+
+                <h2 class="mb-0 fw-bold">
+                    <span style="color:#168cff;">D</span>hyani
+                </h2>
+
+                <nav class="bg-primary rounded-pill d-flex justify-content-center align-items-center gap-4 px-4 py-2">
+                    <a href="#home" class="text-decoration-none text-white">Home</a>
+                    <a href="#about" class="text-decoration-none text-white">About</a>
+                    <a href="#skills" class="text-decoration-none text-white">Skills</a>
+                    <a href="#projects" class="text-decoration-none text-white">Projects</a>
+                    <a href="#contact" class="text-decoration-none text-white">Contact</a>
+                </nav>
+
+                <a href="./DHYANI SATASIYA.pdf"
+                   download
+                   class="btn btn-primary rounded-pill px-4">
+                    <i class="fa-solid fa-download me-2"></i>
+                    Download Resume
+                </a>
+
+            </div>
+
+            <!-- MOBILE HEADER -->
+
+            <div class="d-flex d-md-none justify-content-between align-items-center">
+
+                <h2 class="mb-0 fw-bold">
+                    <span style="color:#168cff;">D</span>hyani
+                </h2>
+
+                <!-- MENU BUTTON -->
+
+                <a href="#mobileMenu"
+                   class="btn rounded-circle mobile-menu-button"
+                   aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <!-- MOBILE MENU -->
+
+                <nav class="mobile-menu" id="mobileMenu">
+
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+
+                    <a href="#about">
+                        <i class="fa-solid fa-user"></i>
+                        About
+                    </a>
+
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        Skills
+                    </a>
+
+                    <a href="#projects">
+                        <i class="fa-solid fa-folder-open"></i>
+                        Projects
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact
+                    </a>
+
+                    <a href="./DHYANI SATASIYA.pdf" download>
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!--
+      PASTE YOUR EXISTING WEBSITE SECTIONS BELOW THIS LINE.
+
+      Make sure the section IDs are:
+      home, about, skills, projects, contact.
+
+      Example:
+      <section id="home">...</section>
+      <section id="about">...</section>
+      <section id="skills">...</section>
+      <section id="projects">...</section>
+      <section id="contact">...</section>
+    -->
+
+</body>
+</html>
+```
 
 
     <!-- ================================================= -->
